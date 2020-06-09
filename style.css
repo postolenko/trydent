@@ -1670,3 +1670,336 @@ footer {
 #hoverCursor.visible {
     display: block;
 }
+
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(234, 234, 234, .85);
+    z-index: 19;
+}
+
+.close_popup {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popup_content {
+    max-width: 500px;
+    margin: 70px auto 20px auto;
+    position: relative;
+    z-index: 2;
+    padding: 37px 55px 39px 55px;
+    background-color: #fff;
+}
+
+.popup_bg_img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup_content .inner_wrapp {
+    position: relative;
+    z-index: 2;
+}
+
+.popup_title {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.popup_content p {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1c1d1c;
+}
+
+.popup_content p a {
+    border-bottom: 1px solid #1c1d1c;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1c1d1c;
+}
+
+.popup_content p a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.popup_content .close_popup {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.input_wrapp {
+    margin: 20px 0;
+}
+
+.input_wrapp input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    -moz-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    height: 60px;
+    -webkit-border-radius: 31px;
+    -moz-border-radius: 31px;
+    border-radius: 31px;
+    font-size: 16px;
+    line-height: 59px;
+    padding: 0 30px;
+}
+
+.p_wrapp {
+    text-align: center;
+}
+
+.succesPopupLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.submit_wrapp {
+    padding: 20px 0;
+}
+
+.pink_pill {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(237, 49, 97);
+    -webkit-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    -moz-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .2);
+    min-height: 60px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 31px;
+    -moz-border-radius: 31px;
+    border-radius: 31px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.pink_pill:hover {
+    -webkit-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .4);
+    -moz-box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .4);
+    box-shadow: 0 0 18.4px 1.6px rgba(111, 3, 71, .4);
+}
+
+.popup_title p {
+    padding: 19px 0 9px 0;
+    font-size: 30px;
+    line-height: 40px;
+    color: #cd3437;
+}
+
+/*-- /Popup  --*/
+
+/*-- Animation --*/
+
+.leftSlice {
+    position: relative;
+    left: -3%;
+    opacity: 0;
+    -webkit-transition-property: left, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: left, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: left, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: left, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: left, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.leftSlice {
+    left: 0;
+    opacity: 1;
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeIn {
+    opacity: 1;
+}
+
+.zoomFade {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition-property: opacity, transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity, transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity, transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity, transform;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity, transform;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.zoomFade {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.fadeInUp {
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    -webkit-transition-property: bottom, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: bottom, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: bottom, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: bottom, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: bottom, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeInUp {
+    bottom: 0;
+    opacity: 1;
+}
+
+/*-- /Animation --*/
