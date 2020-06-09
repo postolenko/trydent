@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
 	<title>Try Dent Max - Ярко! Сочно! Вкусно!</title>
-<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
 </head>
 
 <body>
@@ -23,9 +22,17 @@
 		<div class="header_site">
 			<div class="row">
 				<div class="contacts">
-					<a class="contact_thumb inst_link" href="#"><i class="instagram"></i><i class="instagram_yellow"></i></a>
-					<a class="contact_thumb" href="mailto:info@arazrenk.ru"><i class="mail"></i><span>info@arazrenk.ru</span></a>
-					<a class="contact_thumb tel_link" href="tel:+74951507585"><i class="tel"></i><span>+7 (495) 150 75 85</span></a>
+					<div>
+						<a class="contact_thumb inst_link" href="#"><i class="instagram"></i><i class="instagram_yellow"></i></a>
+					</div>
+					<div class="col_2">
+						<div>
+							<a class="contact_thumb" href="mailto:info@arazrenk.ru"><i class="mail"></i><span>info@arazrenk.ru</span></a>
+						</div>
+						<div>
+							<a class="contact_thumb tel_link" href="tel:+74951507585"><i class="tel"></i><span>+7 (495) 150 75 85</span></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -39,6 +46,7 @@
 		<!-- Section 1 -->
 		<section class="promo_sect">
 			<img class="promo_img" src="img/promo_bg.png" alt="" />
+			<img class="promo_img_resp" src="img/promo_bg_resp.png" alt="" />
 			<div class="paralax_container">
 				<div class="row" id="scene">					
 					<a href="#" class="logo" data-depth="0.6">
@@ -54,7 +62,9 @@
 							<div class="two_cols">
 								<div class="left">
 									<div class="slide_descript">
-										<h2>Ярко! Сочно! Вкусно!</h2>
+										<div class="slide_title">
+											<h2>Ярко! Сочно! Вкусно!</h2>
+										</div>
 										<p>Жевательная резинка, которая подарит яркость вкуса и жизни!</p>
 									</div>
 								</div>
@@ -66,8 +76,10 @@
 						<div class="slide">
 							<div class="two_cols">
 								<div class="left">
-									<div class="slide_descript">					
-										<h2>Ярко! Сочно! Вкусно! 2</h2>
+									<div class="slide_descript">
+										<div class="slide_title">
+											<h2>Ярко! Сочно! Вкусно! 2</h2>
+										</div>
 										<p>Жевательная резинка, которая подарит яркость вкуса и жизни!</p>
 									</div>
 								</div>
@@ -80,7 +92,9 @@
 							<div class="two_cols">
 								<div class="left">
 									<div class="slide_descript">
-										<h2>Ярко! Сочно! Вкусно! 3</h2>
+										<div class="slide_title">
+											<h2>Ярко! Сочно! Вкусно! 3</h2>
+										</div>
 										<p>Жевательная резинка, которая подарит яркость вкуса и жизни!</p>
 									</div>
 								</div>
@@ -93,7 +107,9 @@
 							<div class="two_cols">
 								<div class="left">
 									<div class="slide_descript">
-										<h2>Ярко! Сочно! Вкусно! 4</h2>
+										<div class="slide_title">
+											<h2>Ярко! Сочно! Вкусно! 4</h2>
+										</div>
 										<p>Жевательная резинка, которая подарит яркость вкуса и жизни!</p>
 									</div>
 								</div>
@@ -106,7 +122,9 @@
 							<div class="two_cols">
 								<div class="left">
 									<div class="slide_descript">
-										<h2>Ярко! Сочно! Вкусно! 5</h2>
+										<div class="slide_title">
+											<h2>Ярко! Сочно! Вкусно! 5</h2>
+										</div>
 										<p>Жевательная резинка, которая подарит яркость вкуса и жизни!</p>
 									</div>
 								</div>
@@ -116,12 +134,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="append_arrows"></div>
+					<div class="append_arrows desk"></div>
 				</div>
-				<a href="#" class="lips lips_2">
-					<img src="img/lips_pink.svg" alt="" />
-					<p>Нажми на меня</p>
-				</a>
+				<div class="button_two_cols">
+					<a href="#" class="lips lips_2">
+						<img src="img/lips_pink.svg" alt="" />
+						<p>Нажми на меня</p>
+					</a>
+					<div class="append_arrows resp"></div>
+				</div>
 			</div>
 		</section>
 		<!-- /Section 1 -->
@@ -133,51 +154,61 @@
 					<h2>Витрина</h2>
 					<p>Мы можем предложить Вам лучшие варианты!</p>
 				</div>
-				<div class="gums_thumbs">
-					<div class="gumb_thumb blue">
-						<div class="img_1_box">
-							<img src="img/img_11.png" alt="" />
+				<div class="gums_thumbs gums_thumbs_slider">
+					<div class="slide">
+						<div class="gumb_thumb blue">
+							<div class="img_1_box">
+								<img src="img/img_11.png" alt="" />
+							</div>
+							<div class="img_2_box">
+								<img src="img/img_06.png" alt="" />
+							</div>
+							<p>Перечная мята</p>
 						</div>
-						<div class="img_2_box">
-							<img src="img/img_06.png" alt="" />
-						</div>
-						<p>Перечная мята</p>
 					</div>
-					<div class="gumb_thumb pink">
-						<div class="img_1_box">
-							<img src="img/img_12.png" alt="" />
+					<div class="slide">
+						<div class="gumb_thumb pink">
+							<div class="img_1_box">
+								<img src="img/img_12.png" alt="" />
+							</div>
+							<div class="img_2_box">
+								<img src="img/img_07.png" alt="" />
+							</div>
+							<p>Малинка и лимон</p>
 						</div>
-						<div class="img_2_box">
-							<img src="img/img_07.png" alt="" />
-						</div>
-						<p>Малинка и лимон</p>
 					</div>
-					<div class="gumb_thumb green">
-						<div class="img_1_box">
-							<img src="img/img_13.png" alt="" />
+					<div class="slide">
+						<div class="gumb_thumb green">
+							<div class="img_1_box">
+								<img src="img/img_13.png" alt="" />
+							</div>
+							<div class="img_2_box">
+								<img src="img/img_08.png" alt="" />
+							</div>
+							<p>Мята</p>
 						</div>
-						<div class="img_2_box">
-							<img src="img/img_08.png" alt="" />
-						</div>
-						<p>Мята</p>
 					</div>
-					<div class="gumb_thumb red">
-						<div class="img_1_box">
-							<img src="img/img_14.png" alt="" />
+					<div class="slide">
+						<div class="gumb_thumb red">
+							<div class="img_1_box">
+								<img src="img/img_14.png" alt="" />
+							</div>
+							<div class="img_2_box">
+								<img src="img/img_09.png" alt="" />
+							</div>
+							<p>Арбуз дыня</p>
 						</div>
-						<div class="img_2_box">
-							<img src="img/img_09.png" alt="" />
-						</div>
-						<p>Арбуз дыня</p>
 					</div>
-					<div class="gumb_thumb orange">
-						<div class="img_1_box">
-							<img src="img/img_15.png" alt="" />
+					<div class="slide">
+						<div class="gumb_thumb orange">
+							<div class="img_1_box">
+								<img src="img/img_15.png" alt="" />
+							</div>
+							<div class="img_2_box">
+								<img src="img/img_10.png" alt="" />
+							</div>
+							<p>Корица</p>
 						</div>
-						<div class="img_2_box">
-							<img src="img/img_10.png" alt="" />
-						</div>
-						<p>Корица</p>
 					</div>
 				</div>
 				<div class="btn_wrapp_2">
@@ -193,6 +224,7 @@
 		<!-- Section 3 -->
 		<section class="sect_3 grey_bg">
 			<img class="grey_bg_img" src="img/grey_bg.png" alt="" />
+			<img class="grey_bg_img_resp" src="img/grey_bg_resp.png" alt="" />
 			<div class="row">
 				<div class="title_wrapp title_wrapp_2">
 					<h2>Наши преимущества</h2>
@@ -265,6 +297,7 @@
 		<!-- Section 4 -->
 		<section class="sect_4">
 			<img src="img/sect_4_bg.png" class="sect_4_img" alt="" />
+			<img src="img/sect_4_bg_resp.png" class="sect_4_img_resp" alt="" />
 			<div class="row">
 				<div class="title_wrapp">
 					<h2>Торговое оборудование</h2>
@@ -275,8 +308,8 @@
 						<div class="slide slide_3">
 							<div class="two_cols_3">
 								<div class="left">
-									<a href="img/slide_3.jpg" class="slide_img_box" data-fancybox = "gallery_1">
-										<img src="img/slide_3.jpg" alt="" />
+									<a href="img/slide_3.jpg" class="slide_img_box" style="background-image: url(img/slide_3.jpg)" data-fancybox = "gallery_1">
+										<!-- <img src="img/slide_3.jpg" alt="" /> -->
 									</a>
 								</div>
 								<div class="right">
@@ -290,8 +323,8 @@
 						<div class="slide slide_3">
 							<div class="two_cols_3">
 								<div class="left">
-									<a href="img/slide_3.jpg" class="slide_img_box" data-fancybox = "gallery_1">
-										<img src="img/slide_3.jpg" alt="" />
+									<a href="img/slide_3.jpg" class="slide_img_box" style="background-image: url(img/slide_3.jpg)" data-fancybox = "gallery_1">
+										<!-- <img src="img/slide_3.jpg" alt="" /> -->
 									</a>
 								</div>
 								<div class="right">
@@ -343,6 +376,7 @@
 		<!-- Section 6 -->
 		<section class="sect_6">
 			<img class="sect_6_img" src="img/sect_6_bg.png" alt="" />
+			<img class="sect_6_img_resp" src="img/sect_6_bg_resp.png" alt="" />
 			<div class="row">
 				<div class="contacts_templ">
 					<div class="left">
@@ -360,8 +394,12 @@
 					<div class="right">
 						<div class="contacts_box">
 							<h2>Контакты</h2>
-							<a class="contact_thumb contact_thumb_2 tel_link" href="tel:+74951507585"><i class="tel_2"></i><span>+7 (495) 150 75 85</span></a>
-							<a class="contact_thumb contact_thumb_2" href="mailto:info@arazrenk.ru"><i class="mail_2"></i><span>info@arazrenk.ru</span></a>							
+							<div>
+								<a class="contact_thumb contact_thumb_2 tel_link" href="tel:+74951507585"><i class="tel_2"></i><span>+7 (495) 150 75 85</span></a>
+							</div>
+							<div>
+								<a class="contact_thumb contact_thumb_2" href="mailto:info@arazrenk.ru"><i class="mail_2"></i><span>info@arazrenk.ru</span></a>
+							</div>
 							<p>ООО «СУСАН РУС ГРУП» Россия, 127055, г. Москва, ул. Сущевская, д. 12, стр. 1, подъезд 5, этаж 4, офис 9</p>
 						</div>
 					</div>
@@ -388,7 +426,7 @@
 
 	</div>
 
-	<img src="img/search.svg" alt="" / id="hoverCursor">
+	<img src="img/search.svg" alt="" id="hoverCursor" />
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">

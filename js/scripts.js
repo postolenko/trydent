@@ -47,6 +47,44 @@ $(document).ready(function() {
     var scene2 = document.getElementById('scene_2');
     var parallaxInstance2 = new Parallax(scene2);
 
+    if( $(".gums_thumbs_slider").length > 0 ) {
+        $(".gums_thumbs_slider").not(".slick-initialized").slick({
+            dots: false,
+            arrows: true,
+            // autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1200,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img class="link" src="img/arrow_black.svg"><img class="hover" src="img/arrow_green.svg"></button>',
+            nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img class="link" src="img/arrow_black.svg"><img class="hover" src="img/arrow_green.svg"></button>',
+            responsive: [
+                {
+                  breakpoint: 1240,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 1220,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 560,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+        });
+    }
+
+
     if( $(".slider_2").length > 0 ) {
         $(".slider_2").not(".slick-initialized").slick({
             dots: false,
